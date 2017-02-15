@@ -1,0 +1,43 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>西南科技大学信息工程学院Rating计分系统</title>
+
+        <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+        <meta http-equiv="description" content="this is my page">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<base href="${ctx_path}/"/>
+        <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    </head>
+    <h1 align="center">
+        西南科技大学信息工程学院Rating计分系统
+    </h1>
+        <body>
+            <table border="1"  align="center">
+                <tr>
+                    <td align="center">
+                        姓名
+                    </td>
+                    <td align="center">
+                       rating
+                    </td>
+                    <td align="center">
+                       参加场数
+                    </td>
+                </tr>
+                <#list NodeList as usermodel>
+                <tr>
+                    <td align="center">
+                        <a href = "user/${usermodel.id}">${usermodel.user} </a>
+                    </td>
+                    <td align="center">
+                        ${usermodel.rating}
+                    </td>
+                    <td align="center">
+                        ${usermodel.joined}
+                    </td>
+                </tr>
+                </#list>
+            </table>
+        </body>
+</html>

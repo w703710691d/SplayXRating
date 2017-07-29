@@ -9,9 +9,6 @@ import com.jfinal.core.JFinal;
 import com.jfinal.ext.handler.ContextPathHandler;
 import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.c3p0.C3p0Plugin;
-import com.MainList;
-import com.UserModel;
-import com.admin;
 public class RatingConfig extends JFinalConfig 
 {
 	public void configConstant(Constants me) 
@@ -20,9 +17,9 @@ public class RatingConfig extends JFinalConfig
 	}  
 	public void configRoute(Routes me) {   
 		me.add("/", MainList.class);
-		me.add("/user",UserMain.class);
-		me.add("/contest",Contest.class);
-		me.add("/admin",admin.class);
+		me.add("/user", UserMain.class);
+		me.add("/contest", Contest.class);
+		me.add("/admin", admin.class);
 	}  
 	@Override
 	public void configPlugin(Plugins me) 

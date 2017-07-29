@@ -3,8 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import com.jfinal.core.Controller; 
-import com.UserModel;
+import com.jfinal.core.Controller;
 public class MainList extends Controller 
 {  
 
